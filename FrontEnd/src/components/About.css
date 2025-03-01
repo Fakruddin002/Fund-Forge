@@ -1,0 +1,100 @@
+/* About.css - Enhanced Styling */
+.about-container {
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, #ece9e6, #ffffff);
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  max-width: 1200px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.about-header h1 {
+  font-size: 2.8rem;
+  color: #6a11cb;
+  margin-bottom: 0.5rem;
+}
+
+.about-header p {
+  font-size: 1.3rem;
+  color: #555;
+  max-width: 800px;
+  margin: auto;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+}
+
+.about-section {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.about-section h2 {
+  font-size: 1.9rem;
+  color: #2575fc;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.about-section p {
+  font-size: 1rem;
+  color: #444;
+}
+
+.about-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.about-section ul li {
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ddd;
+  transition: color 0.3s ease;
+}
+
+.about-section ul li:hover {
+  color: #2575fc;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+      padding: 2rem 1rem;
+  }
+
+  .about-header h1 {
+      font-size: 2.2rem;
+  }
+
+  .about-header p {
+      font-size: 1.1rem;
+  }
+
+  .about-content {
+      grid-template-columns: 1fr;
+  }
+
+  .about-section h2 {
+      font-size: 1.6rem;
+  }
+}
